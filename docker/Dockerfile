@@ -26,6 +26,6 @@ COPY entrypoint.sh /code/
 RUN sed -i 's/\r$//g' /code/entrypoint.sh && \
     chmod +x /code/entrypoint.sh
 
-COPY . .
+COPY pacha/ /code/pacha/
 
 ENTRYPOINT ["/code/entrypoint.sh"]

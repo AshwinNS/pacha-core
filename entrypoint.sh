@@ -27,7 +27,6 @@ then
   # crond -f &
 
   python manage.py migrate
-  python manage.py init_app
 fi
 
 exec "$@"
